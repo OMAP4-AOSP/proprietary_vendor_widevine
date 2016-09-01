@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_BOARD_PLATFORM),omap4)
+ifneq ($(filter omap4 tegra3,$(TARGET_BOARD_PLATFORM)),)
 
 
 include $(CLEAR_VARS)
